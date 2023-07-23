@@ -1,0 +1,63 @@
+.nav{
+    background-color: #97DEFF !important; 
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+
+.list ul{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+ul li{
+    list-style-type: none;
+    margin : 10px 30px 10px 0px;  /*atas, kanan, bawah, kiri*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.navbar li a{
+    display: block;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+li:first-child::before{
+    content: "";
+    display: block;
+    background: url(../images/calendar.svg) no-repeat;
+    background-size: 15px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 3px 0 0 0;
+}
+
+li:last-child::before{
+    content: "";
+    display: block;
+    background: url(../images/pc.svg) no-repeat;
+    background-size: 15px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 3px 0 0 0;
+}

@@ -1,0 +1,41 @@
+<%- include("partials/header.ejs")  %>
+
+<!-- Content -->
+<section class="content" id="content">
+    <div class="box">
+        <h1><%= date %></h1>
+    </div>
+
+</section>
+
+<!-- Todolist -->
+<section class="todolist" id="todolist">
+    <div class="item">
+        <input type="checkbox" onchange="toggleTextDecoration(this)">
+        <p>Koding 24/7</p>       
+    </div>
+
+
+    <% tasks.forEach((task) => { %>
+        <div class="item">
+            <input type="checkbox" onchange="toggleTextDecoration(this)">
+            <p> <%= task %> </p>
+        </div>
+    <% }); %>
+    
+    
+    
+    <div class="item">
+        <form  action="/" method="POST">
+            <input type="text" name="newList" placeholder="New List">
+            <button value="submit" name="list"></button>
+        </form>
+    </div>
+
+
+</section>
+
+
+</div>
+
+<%- include("partials/footer.ejs")  %>

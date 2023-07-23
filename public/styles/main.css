@@ -1,0 +1,154 @@
+body{
+    background: linear-gradient(to left bottom, #C9EEFF 40%, #97DEFF 60%, #62CDFF 80%);
+    min-height: 100vh;
+}
+
+.content,
+.todolist{
+    margin-top: 50px;
+    font-family: 'PT Serif', serif;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    background-color: #AA77FF;
+    height: 20px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 75px white;
+}
+
+.todolist,
+input{
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+input[type=checkbox]{
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.item{
+    width: 350px;
+    min-height: 40px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+
+.item:first-of-type{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.item:last-of-type{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+input[type=text]{
+    height: 100%;
+    width: 280px;
+    border: 0px solid;
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+
+input[type=text]:focus{
+    outline: none;
+    border-width: 0 0 3px;
+    border-color: #AA77FF;
+    
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    background: url(../images/plus.svg) no-repeat;
+    background-size: cover;
+    background-color: #AA77FF;
+    border: 0px;
+    border-radius: 50%;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+
+
+.item input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+}
+
+
+footer{
+    text-align: center;
+    color: rgba(10, 10, 10, 0.371);
+    padding-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Mobile */
+@media (max-width:576px) {
+    .box{
+        width: 300px;    
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .item{
+        width: 300px;
+    }
+
+    input[type=text]{
+        width: 240px;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+/* Mobile Kentang*/
+@media (max-width:325px) {
+    .box{
+        width: 260px;    
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .item{
+        width: 260px;
+    }
+
+    input[type=text]{
+        width: 200px;
+    }
+    
+}
