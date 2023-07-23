@@ -10,11 +10,6 @@
 
 <!-- Todolist -->
 <section class="todolist" id="todolist">
-    <div class="item">
-        <input type="checkbox" onchange="toggleTextDecoration(this)">
-        <p>Koding 24/7</p>       
-    </div>
-
 
     <% tasksWork.forEach((taskWork) => { %>
         <div class="item">
@@ -23,8 +18,7 @@
         </div>
     <% }); %>
     
-    
-    
+      
     <div class="item">
         <form  action="/work" method="POST">
             <input type="text" name="newListWork" placeholder="New List">
@@ -32,9 +26,7 @@
         </form>
     </div>
 
-
 </section>
-
 
 </div>
 
