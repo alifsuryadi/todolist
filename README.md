@@ -3,6 +3,34 @@ Todolist web app: organize tasks, stay productive
 
 ### You can add tasks you want on this website
 ___
+---
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/alifsuryadi/todolist
+```
+
+Go to the project directory
+
+```bash
+  cd todolist
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+---
 
 
 ## Today's Main Menu
