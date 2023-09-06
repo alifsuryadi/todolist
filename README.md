@@ -27,7 +27,7 @@ Install dependencies
 Start the server
 
 ```bash
-  nodemon index.js
+  node index.js
 ```
 
 ---
